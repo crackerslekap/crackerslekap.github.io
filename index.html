@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            background-image: url('img.jpg');
+            min-height: 100vh;
+        }
+        .container {
+            min-height: 100vh;
+        }
+        #search {
+            background-color: transparent;
+            color: white;
+        }
+        .city {
+            font-size: 56px;
+        }
+        .row {
+            margin: 50px;
+        }
+        .temp, .weather, .highlow {
+            margin: 10px;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-field">
+            <input id="search" type="text">
+            <label for="search" class="active grey-text">Search for a place...</label>
+        </div>
+        <div class="whitespace" style="height: 10vh">
+        </div>
+        <div class="row">
+            <section class="col s4 offset-s4 center">
+                <div class="city white-text" id="loc">Enter Location</div>
+                <div class="date grey-text text-lighten-2" id="date"></div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="col s4 offset-s4 center">
+                <div class="weather white-text" id="weather"></div>
+                <div class="temp white-text" id="temp"><span></span></div>
+                <div class="feels white-text" id="feels"><span></span></div>
+                <div class="highlow white-text" id="hi-low"></div>
+                <button class="btn-large blue waves-effect waves-light" id="outter-button"><span id="unit">Celsius</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
