@@ -5,8 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -21,7 +20,8 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
     "execa": "latest",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "vue-gh-pages": "^1.19.1"
   },
   "eslintConfig": {
     "root": true,
