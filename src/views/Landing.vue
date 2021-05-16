@@ -6,7 +6,7 @@
     </div>
     <div class="left-buttons">
         <button class="launch-now-btn">Launch App</button>
-        <button class="info-btn">Info</button>
+        <router-link to="/info"><button class="info-btn">Info</button></router-link>
     </div>
 </div>
     <div class="right">
@@ -16,7 +16,13 @@
 
 <script>
 export default {
-    name: 'Landing'
+    name: 'Landing',
+    methods: {
+        // infoClick() {
+        //     this.$router.push('info');
+        //     console.log("routed to info");
+        // }
+    }
 }
 </script>
 
@@ -47,6 +53,7 @@ button {
     background-color: #DADADA;
     color: #333;
 }
+
 
 button:hover {
     transform: scale(1.05);

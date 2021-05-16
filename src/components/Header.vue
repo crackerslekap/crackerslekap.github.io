@@ -4,8 +4,8 @@
             <h1>{{title}}</h1>
         </div>
         <div class="header-right">
-            <button>Home</button>
-            <button>About</button>
+            <router-link to="/"><button>Home</button></router-link>
+            <router-link to="/info"><button>About</button></router-link>
             <button class="launch-btn">Launch</button>
         </div>
     </header>
@@ -63,6 +63,7 @@ button:hover {
     font-size: 24px;
     transition: 0.3s;
 }
+
 h1 {
     font-size: 36px;
     color: #3F479C;

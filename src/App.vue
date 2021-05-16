@@ -1,19 +1,17 @@
 <template>
   <div class="container">
       <Header title="Factbook" />
-      <Landing />
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Header from './components/Header';
-import Landing from './components/Landing';
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Landing
+    Header
   }
 }
 </script>
@@ -24,6 +22,11 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
